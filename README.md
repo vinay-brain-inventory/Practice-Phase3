@@ -8,9 +8,9 @@ This repo is for daily practice. Update the checkboxes as you finish tasks.
   - [x] Validation + global error handling (Zod + 400/401/403/500 + requestId)
   - **Project**: `Day1/express-jwt-api`
 - **LeetCode (Arrays & Hash Maps)**
-  - [ ] Two Sum (Easy)
-  - [ ] Best Time to Buy and Sell Stock (Easy)
-  - [ ] Product of Array Except Self (Medium)
+  - [x] Two Sum (Easy)
+  - [x] Best Time to Buy and Sell Stock (Easy)
+  - [x] Product of Array Except Self (Medium)
 
 ## Day 2 — Database Layer & Strings (PENDING)
 - **Dev**
