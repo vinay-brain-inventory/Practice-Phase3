@@ -6,7 +6,6 @@ This repo is for daily practice. Update the checkboxes as you finish tasks.
 - **Dev**
   - [x] Express.js REST API with JWT auth (TS + helmet/cors/morgan + register/login + Postman)
   - [x] Validation + global error handling (Zod + 400/401/403/500 + requestId)
-  - **Project**: `Day1/express-jwt-api`
 - **LeetCode (Arrays & Hash Maps)**
   - [x] Two Sum (Easy)
   - [x] Best Time to Buy and Sell Stock (Easy)
