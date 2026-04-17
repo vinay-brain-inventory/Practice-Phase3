@@ -1,0 +1,25 @@
+Link : https://leetcode.com/problems/valid-anagram/submissions/1980701631/
+
+
+Problem: 
+~~~~~~~~
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+
+
+
+Example:
+~~~~~~~~
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+
+
+
+Solution:
+~~~~~~~~~
+
+var isAnagram = function(s, t) {
+    return t.split("").sort().join("") == s.split("").sort().join("")
+
+};

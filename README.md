@@ -11,14 +11,14 @@ This repo is for daily practice. Update the checkboxes as you finish tasks.
   - [x] Best Time to Buy and Sell Stock (Easy)
   - [x] Product of Array Except Self (Medium)
 
-## Day 2 — Database Layer & Strings (PENDING)
+## Day 2 — Database Layer & Strings (DONE)
 - **Dev**
-  - [ ] Mongoose schemas + indexing (User, Product) + hooks + seed (1000 records)
-  - [ ] Paginated search API: `GET /products` (search/category/price/page/limit/sort + explain())
+  - [x] Mongoose schemas + indexing (User, Product) + hooks + seed (1000 records)
+  - [x] Paginated search API: `GET /products` (search/category/price/page/limit/sort + explain())
 - **LeetCode (Strings & Sliding Window)**
-  - [ ] Valid Anagram (Easy)
-  - [ ] Longest Substring Without Repeating Characters (Medium)
-  - [ ] Group Anagrams (Medium)
+  - [x] Valid Anagram (Easy)
+  - [x] Longest Substring Without Repeating Characters (Medium)
+  - [x] Group Anagrams (Medium)
 
 ## Day 3 — Async Patterns & Linked Lists (PENDING)
 - **Dev**
