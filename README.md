@@ -22,12 +22,12 @@ This repo is for daily practice. Update the checkboxes as you finish tasks.
 
 ## Day 3 — Async Patterns & Linked Lists (PENDING)
 - **Dev**
-  - [ ] BullMQ + Redis job queue (retries + backoff + DLQ + Bull Board)
-  - [ ] Typed EventEmitter pub/sub module + tests (wildcard + once + unsubscribe)
+  - [x] BullMQ + Redis job queue (retries + backoff + DLQ + Bull Board)
+  - [x] Typed EventEmitter pub/sub module + tests (wildcard + once + unsubscribe)
 - **LeetCode (Linked Lists & Two Pointers)**
-  - [ ] Reverse Linked List (Easy) — iterative + recursive
-  - [ ] Linked List Cycle (Easy)
-  - [ ] LRU Cache (Medium)
+  - [x] Reverse Linked List (Easy) — iterative + recursive
+  - [x] Linked List Cycle (Easy)
+  - [x] LRU Cache (Medium)
 
 ## Day 4 — Real-time & Trees (PENDING)
 - **Dev**
