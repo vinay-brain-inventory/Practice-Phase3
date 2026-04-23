@@ -1,0 +1,50 @@
+name: day5-ci
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    services:
+      mongo:
+        image: mongo:7
+        ports:
+          - 27017:27017
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+    env:
+      NODE_ENV: test
+      JWT_SECRET: test-secret
+      MONGO_URI_TEST: mongodb://localhost:27017/day5_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: Day5/DevTask/package-lock.json
+      - name: Install dependencies
+        working-directory: Day5/DevTask
+        run: npm ci
+      - name: Lint
+        working-directory: Day5/DevTask
+        run: npm run lint
+      - name: Test with coverage
+        working-directory: Day5/DevTask
+        run: npm run test:coverage
+      - name: Build Docker image
+        run: docker build -f Day5/DevTask/docker/Dockerfile -t your-registry/day5-app:latest Day5/DevTask
+      - name: Push Docker image
+        env:
+          REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+          REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+        run: |
+          echo "${REGISTRY_PASSWORD}" | docker login your-registry -u "${REGISTRY_USERNAME}" --password-stdin
+          docker push your-registry/day5-app:latest
+      - name: Deploy to staging
+        run: echo "Deploying to staging..."
+
